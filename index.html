@@ -1,0 +1,585 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OverPlay</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light p-3 position-sticky top-0"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="logo">OverPlay</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <div class="navbar-nav" id="nav-items">
+            <a class="nav-link active" href="#inicio">Início</a>
+            <a class="nav-link" href="#plataformas">Plataformas</a>
+            <a class="nav-link" href="#sobre">Sobre</a>
+            <a class="nav-link" href="#contato">Contato</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/img/pc-mobile.png" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="/img/pc-tablet.png"
+              />
+              <img src="/img/pc-desktop.png" class="d-block w-100" alt="..." />
+            </picture>
+          </div>
+
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/img/ps-mobile.png" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="/img/ps-tablet.png"
+              />
+              <img src="/img/ps-desktop.png" class="d-block w-100" alt="..." />
+            </picture>
+          </div>
+
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 767px)" srcset="/img/xb-mobile.png" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="/img/xb-tablet.png"
+              />
+              <img src="/img/xb-desktop.png" class="d-block w-100" alt="..." />
+            </picture>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
+    </section>
+
+    <main class="container mt-5">
+      <section id="plataformas">
+        <h1 class="text-center mb-4">Plataformas</h1>
+        <nav
+          class="nav nav-tabs d-flex align-items-center justify-content-between"
+          id="nav-instrumentos"
+        >
+          <button
+            data-bs-toggle="tab"
+            data-bs-target="#violao"
+            class="nav-link active d-block w-25"
+            type="button"
+          >
+            PC
+          </button>
+          <button
+            data-bs-toggle="tab"
+            data-bs-target="#guitarra"
+            class="nav-link d-block w-25"
+            type="button"
+          >
+            Playstation
+          </button>
+          <button
+            data-bs-toggle="tab"
+            data-bs-target="#baixo"
+            class="nav-link d-block w-25"
+            type="button"
+          >
+            Xbox
+          </button>
+        </nav>
+
+        <div class="tab-content">
+          <div class="tab-pane active py-5" id="violao">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/pc1.png"
+                      class="card-img-top"
+                      alt="Pc Gamer Fácil AMD Ryzen 5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Pc Gamer AMD Ryzen 5</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/pc2.png"
+                      class="card-img-top"
+                      alt="Pc Gamer Fácil Intel Core I5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Pc Gamer Intel Core I5</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/pc3.png"
+                      class="card-img-top"
+                      alt="Pc Gamer Fácil Intel Core I7"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Pc Gamer Intel Core I7</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/pc4.png"
+                      class="card-img-top"
+                      alt="Pc Gamer Intel Core I5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Pc Gamer Intel Core I5</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/pc5.png"
+                      class="card-img-top"
+                      alt="Pc Gamer AMD Ryzen 5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Pc Gamer AMD Ryzen 5</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/pc6.png"
+                      class="card-img-top"
+                      alt="Pc Gamer Intel Core I5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Pc Gamer Intel Core I5</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane py-5" id="guitarra">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/ps1.png"
+                      class="card-img-top"
+                      alt="Playstation 5"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Playstation 5</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/ps5.png"
+                      class="card-img-top"
+                      alt="Console PS3 Slim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Console PS5 Slim</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/ps3.png"
+                      class="card-img-top"
+                      alt="PS4 PRO 1TB"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">PS4 PRO 1TB</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/ps2.png"
+                      class="card-img-top"
+                      alt="PS4 Fat 500gb"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">PS4 Fat 500gb</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/ps4.png"
+                      class="card-img-top"
+                      alt="PS3 Super Slim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3 text-center">
+                        PS3 Super Slim
+                      </h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="/img/ps6.png"
+                      class="card-img-top"
+                      alt="Playstation 5 Slim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Playstation 5 Slim</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane py-5" id="baixo">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="img/xb4.png"
+                      class="card-img-top"
+                      alt="Xbox Series X"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Xbox Series X</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="img/xb3.png"
+                      class="card-img-top"
+                      alt="Xbox Series S"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Xbox Series S</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="img/xb2.png"
+                      class="card-img-top"
+                      alt="Xbox One S"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Xbox One S</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="img/xb1.png"
+                      class="card-img-top"
+                      alt="Xbox One Fat"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Xbox One Fat</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="img/xb5.png"
+                      class="card-img-top"
+                      alt="Xbox 360 Super Slim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Xbox 360 Super Slim</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center"
+              >
+                <a href="#contato">
+                  <div class="card d-flex align-items-center p-3">
+                    <img
+                      src="img/xb6.png"
+                      class="card-img-top"
+                      alt="Xbox 360 Slim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title mt-3">Xbox 360 Slim</h5>
+                      <a href="#contato" class="text-center">Compre Aqui</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="/img/store.jpg" alt="" />
+          </div>
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center"
+          >
+            <h1 class="display-5">Nossa História</h1>
+            <p>
+              A OverPlay é uma loja especializada em consoles e PCs gamers,
+              oferecendo uma ampla variedade de produtos de alta qualidade para
+              atender às necessidades dos fãs de jogos. Nossos produtos são
+              escolhidos com cuidado para garantir que proporcionem uma ótima
+              experiência de jogo. Nossa equipe está aqui para ajudar os
+              clientes a encontrar o que precisam e tornar a compra divertida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="my-5">
+      <div class="container">
+        <form action="" id="encomendar">
+          <div class="mb-3">
+            <label for="modelo" class="form-label">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              class="form-control"
+              id="nome"
+              value=""
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              value=""
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="descricao" class="form-label">Descrição</label>
+            <textarea
+              class="form-control"
+              name="descricao"
+              id="descricao"
+              rows="5"
+            ></textarea>
+          </div>
+          <button class="btn w-100" type="submit">Entre em contato</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container d-flex align-items-center justify-content-between">
+        <p>
+          &copy; 2024 OverPlay. Todos os direitos reservados a Eric Bortoleto.
+        </p>
+        <h3>OverPlay</h3>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
